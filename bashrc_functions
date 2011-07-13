@@ -1,0 +1,116 @@
+#!/bin/sh
+
+export PATH=$PATH:~/bin
+
+# Change to common directories
+gg()
+{
+    declare -A aliases
+    aliases["gid"]='/opt/development/gid'
+    aliases["qa"]='/opt/development/gid/qa'
+    aliases["dev"]='/home/juanibiapina/development/'
+    aliases["bb"]='/home/juanibiapina/development/brazil-build/'
+    aliases["sc"]='/home/juanibiapina/scripts/'
+    aliases["do"]='/home/juanibiapina/Downloads/'
+    aliases["cc"]='/home/juanibiapina/development/ccmonitor/'
+
+    cd ${aliases[${1:-gid}]}
+    pwd
+}
+
+# Update brazil-build sources
+up()
+{
+    (gg bb; rake $1)
+}
+
+send_uncommited_files() {
+  if [ "$#" -ne "1" ]; then echo "Usage: send_uncommited_files /path/on/vm/to/workspace/project" >&2; return 1; fi
+
+  git status --porcelain | cut -c4- | sort | uniq | while read line
+do
+  from="$line";
+  to="${1}/${line#*/}";
+  echo /bin/cp -f "'${from}'" "'${to}'"
+  mkdir -p "$(dirname "${to}")"
+  /bin/cp -f "${from}" "${to}"
+done
+}
+
+send_commits() {
+  if [ "$#" -ne "2" ]; then echo "Usage: send_commits number-of-commits /path/to/mounted/workspace/project" >&2; return 1; fi
+
+  git log --name-status -n "$1" | grep '^[A-Z][[:space:]]\+.*/.*' | sort -k2 | uniq -f1 | while read status line;
+do
+  from="$line";
+  to="${2}/${line#*/}";
+  case "$status" in
+    A|M)
+      echo /bin/cp -f "'${from}'" "'${to}'"
+      mkdir -p "$(dirname "${to}")"
+      /bin/cp -f "${from}" "${to}"
+      ;;
+    D)
+      echo "Deleting file: $to"
+      /bin/rm -f "$to"
+      ;;
+  esac
+  echo "---- ---- ---- ---- ----"
+done
+}
+
+clean_config() {
+  grep -v "^#" $1 | sed -e '/^$/d'
+}
+
+# Find files and dirs
+myfind() {
+  FFOUND_PWD=${PWD}
+  eval FFOUND=($(find "$PWD" -iname "*$2*" -type "$1" | sed -e 's/.*/"&"/'))
+  print_found
+}
+print_found() {
+  local length=${#FFOUND[*]}
+
+  local index=1
+  while [ "$index" -le "$length" ]; do
+    if [ -t 1 ]; then printf "% 4d " $index; fi
+    fn $index
+    index=$((index + 1))
+  done
+}
+
+ff() { myfind "f" "$1"; }
+fd() { myfind "d" "$1"; }
+
+fn() {
+  item=${FFOUND[$1-1]}
+  if [ -z "$item" ]; then return; fi
+  if [ "$PWD" != "$FFOUND_PWD" ]; then echo -n $FFOUND_PWD/; fi
+  echo ${item##$FFOUND_PWD/}
+}
+
+v() { gvim "$(fn $1)";  }
+d() { cd $(dirname "$(fn $1)"); }
+c() { cat "$(fn $1)"; }
+lf() { print_found; }
+
+# Aliases
+alias aliases='gvim ~/scripts/bashrc_functions'
+
+alias kssh='ssh -o PreferredAuthentications=keyboard-interactive'
+
+alias habits='history | sed 's/^[[:space:]]*[0-9]*[[:space:]]*//' | sort | uniq -c | sort -n -r | head -n 10'
+
+alias nat='sudo iptables -t nat'
+alias iptables='sudo iptables'
+
+alias inst='sudo aptitude install'
+alias purge='sudo aptitude purge'
+alias search='aptitude search'
+alias upgrade='sudo aptitude upgrade'
+alias show='aptitude show'
+
+alias webserverhere='sudo python -m SimpleHTTPServer'
+
+alias g=git
