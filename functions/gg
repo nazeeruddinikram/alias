@@ -7,7 +7,7 @@ gg()
     aliases["qa"]='/opt/development/gid/qa'
     aliases["dev"]='/home/juanibiapina/development/'
     aliases["bb"]='/home/juanibiapina/development/brazil-build/'
-    aliases["sc"]='/home/juanibiapina/scripts/'
+    aliases["sc"]='/home/juanibiapina/development/alias/'
     aliases["do"]='/home/juanibiapina/Downloads/'
     aliases["cc"]='/home/juanibiapina/development/ccmonitor/'
 
