@@ -1,1 +1,15 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
+BASEDIR=`dirname ${BASH_SOURCE[0]}`
+
+# Configuration options
+. "$BASEDIR/config"
+
+# Aliases
+. "$BASEDIR/aliases"
+
+# Include all functions
+for file in $BASEDIR/functions/*
+do
+  . "$file"
+done;
