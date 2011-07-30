@@ -1,0 +1,20 @@
+#!/bin/sh
+
+alias aliases='gvim ~/scripts/bashrc_functions'
+
+alias kssh='ssh -o PreferredAuthentications=keyboard-interactive'
+
+alias habits='history | sed 's/^[[:space:]]*[0-9]*[[:space:]]*//' | sort | uniq -c | sort -n -r | head -n 10'
+
+alias nat='sudo iptables -t nat'
+alias iptables='sudo iptables'
+
+alias inst='sudo aptitude install'
+alias purge='sudo aptitude purge'
+alias search='aptitude search'
+alias upgrade='sudo aptitude upgrade'
+alias show='aptitude show'
+
+alias webserverhere='sudo python -m SimpleHTTPServer'
+
+alias g=git

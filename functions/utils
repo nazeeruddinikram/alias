@@ -1,0 +1,5 @@
+#!/bin/sh
+
+clean_config() {
+  grep -v "^#" $1 | sed -e '/^$/d'
+}

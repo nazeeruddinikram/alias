@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export PATH=$PATH:~/bin
+
+PS1='$( if [[ ${?#0} = "" ]]; then echo "\[\e[01;32m\]:) \[\e[00m\]"; else echo "\[\e[01;31m\]:( \[\e[00m\]" ; fi)'

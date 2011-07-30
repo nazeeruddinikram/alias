@@ -1,0 +1,16 @@
+#!/bin/sh
+
+gg()
+{
+    declare -A aliases
+    aliases["gid"]='/opt/development/gid'
+    aliases["qa"]='/opt/development/gid/qa'
+    aliases["dev"]='/home/juanibiapina/development/'
+    aliases["bb"]='/home/juanibiapina/development/brazil-build/'
+    aliases["sc"]='/home/juanibiapina/scripts/'
+    aliases["do"]='/home/juanibiapina/Downloads/'
+    aliases["cc"]='/home/juanibiapina/development/ccmonitor/'
+
+    cd ${aliases[${1:-gid}]}
+    pwd
+}
