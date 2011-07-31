@@ -7,3 +7,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = tools/vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "tools/vim/bundle/VimClojure"]
+	path = tools/vim/bundle/VimClojure
+	url = https://github.com/vim-scripts/VimClojure.git
