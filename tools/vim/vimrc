@@ -15,8 +15,10 @@ filetype indent plugin on
 noremap <silent> <F2> :NERDTreeToggle<Return>
 
 " Use spaces instead of tabs
-set sta
-set et
+set expandtab
+set smarttab
+set tabstop=2
+set shiftwidth=2
 
 " Enable syntax highligh
 syntax on
