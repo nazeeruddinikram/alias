@@ -1,0 +1,12 @@
+#!/bin/sh
+
+t()
+{
+  if [ "$#" -eq "0" ]; then
+    levels=1
+  else
+    levels=$1
+  fi
+  tree -L $levels
+}
+
