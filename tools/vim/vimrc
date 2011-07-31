@@ -14,6 +14,9 @@ filetype indent plugin on
 " Use F2 to open NERDTree
 noremap <silent> <F2> :NERDTreeToggle<Return>
 
+" FuzzyFinder mappings
+noremap <silent><M-S-f>f  :FufFile **/<CR>
+
 " Use spaces instead of tabs
 set expandtab
 set smarttab
