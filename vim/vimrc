@@ -1,1 +1,37 @@
+" Load pathogen
+source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+ 
+" Force filetype off because Ubuntu already enabled it
+filetype off
+
+" Start pathgen (load bundles)
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" Use filetype plugin
+filetype indent plugin on
+
+" Use F2 to open NERDTree
 noremap <silent> <F2> :NERDTreeToggle<Return>
+
+" Use spaces instead of tabs
+set sta
+set et
+
+" Enable syntax highligh
+syntax on
+
+" Disable swap files
+set noswf
+
+" Set the undo to have a thousand entries
+set undolevels=1000
+
+" Improve the search
+set ignorecase smartcase showmatch hlsearch incsearch
+
+" Set mapping to navigate between open split windows
+noremap <C-h> <C-w><Left>
+noremap <C-j> <C-w><Down>
+noremap <C-k> <C-w><Up>
+noremap <C-l> <C-w><Right>
