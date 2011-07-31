@@ -28,7 +28,7 @@ fn() {
   echo ${item##$FFOUND_PWD/}
 }
 
-v() { gvim "$(fn $1)";  }
+v() { vi "$(fn $1)";  }
 
 d() { cd $(dirname "$(fn $1)"); }
 
