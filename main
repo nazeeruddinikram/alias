@@ -13,3 +13,8 @@ for file in $BASEDIR/functions/*
 do
   . "$file"
 done;
+
+# Start screen
+if [ -z "$STY" ]; then
+    exec screen -RR
+fi
