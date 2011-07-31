@@ -10,3 +10,9 @@
 [submodule "tools/vim/bundle/VimClojure"]
 	path = tools/vim/bundle/VimClojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "tools/vim/bundle/FuzzyFinder"]
+	path = tools/vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "tools/vim/bundle/L9"]
+	path = tools/vim/bundle/L9
+	url = https://github.com/vim-scripts/L9.git
