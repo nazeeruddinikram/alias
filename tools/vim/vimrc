@@ -11,6 +11,9 @@ call pathogen#helptags()
 " Use filetype plugin
 filetype indent plugin on
 
+" Use dark background
+set bg=dark
+
 " Use F2 to open NERDTree
 noremap <silent> <F2> :NERDTreeToggle<Return>
 
