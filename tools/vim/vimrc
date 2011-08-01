@@ -18,13 +18,14 @@ set bg=dark
 noremap <silent> <F2> :NERDTreeToggle<Return>
 
 " Fix meta mappings
-for i in range(65,90) + range(97,122)
-  let c = nr2char(i)
-  exec "map \e".c." <M-".c.">"
-  exec "map! \e".c." <M-".c.">"
-endfor
+" for i in range(65,90) + range(97,122)
+"   let c = nr2char(i)
+"   exec "map \e".c." <M-".c.">"
+"   exec "map! \e".c." <M-".c.">"
+" endfor
 
 " FuzzyFinder mappings
+set <M-F>=F
 noremap <silent><M-S-f>f  :FufFile **/<CR>
 
 " Use spaces instead of tabs
