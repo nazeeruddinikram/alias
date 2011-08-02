@@ -2,7 +2,7 @@
 startup_message off
 
 # Satus line
-hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= %c"
 
 # Fixes delay after pressing ESC on vi
 maptimeout 0
