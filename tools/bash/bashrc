@@ -1,23 +1,27 @@
 #!/usr/bin/env bash
 
-BASEDIR=$(dirname $(readlink ${BASH_SOURCE[0]}))
+if [ -n "$PS1" ]; then
 
-# Ubuntu stuff
-. "$BASEDIR/ubuntu"
+  BASEDIR=$(dirname $(readlink ${BASH_SOURCE[0]}))
 
-# Configuration options
-. "$BASEDIR/config"
+  # Ubuntu stuff
+  . "$BASEDIR/ubuntu"
 
-# Aliases
-. "$BASEDIR/aliases"
+  # Configuration options
+  . "$BASEDIR/config"
 
-# Include all functions
-for file in $BASEDIR/functions/*
-do
-  . "$file"
-done;
+  # Aliases
+  . "$BASEDIR/aliases"
 
-# Start screen
-if [ -z "$STY" ]; then
+  # Include all functions
+  for file in $BASEDIR/functions/*
+  do
+    . "$file"
+  done;
+
+  # Start screen
+  if [ -z "$STY" ]; then
     exec screen -RR
+  fi
+
 fi
