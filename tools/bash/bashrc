@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-BASEDIR=`dirname ${BASH_SOURCE[0]}`
+BASEDIR=$(dirname $(readlink ${BASH_SOURCE[0]}))
+
+# Ubuntu stuff
+. "$BASEDIR/ubuntu"
 
 # Configuration options
 . "$BASEDIR/config"
