@@ -1,0 +1,24 @@
+#!/bin/bash
+
+hash inotifywait 2>&- || { echo >&2 "I require inotifywait but it's not installed.  Aborting."; exit 1; }
+
+ERROR_PATT='[0-9]*[1-9] failures\|[0-9]*[1-9] errors\|FAILURE: [0-9]* fact.* not confirmed.'
+SUCCESS_PATT='0 failures\|0 errors\|All claimed facts ([0-9]*) have been confirmed.'
+
+# magic color stuff from http://www.pixelbeat.org/talks/iitui/sedgrep
+C_ERROR_PATT=`echo -e '\033[01;41m'`         # red
+C_SUCCESS_PATT=`echo -e '\033[01;42m'`       # green
+C_NORM=`echo -e '\033[m'`                    # normal
+
+# here put backup files, ...
+FILE_EXCLUDE_PATT='#.*#'
+
+# I don't know exactly why, but I have to call cake midje one time before the loop for the output to be shown
+cake midje
+
+while true
+do
+    cake midje | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
+
+    inotifywait --exclude "$FILE_EXCLUDE_PATT" -r -e modify . 2> /dev/null
+done
