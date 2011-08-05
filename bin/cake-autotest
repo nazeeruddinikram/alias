@@ -10,15 +10,42 @@ C_ERROR_PATT=`echo -e '\033[01;41m'`         # red
 C_SUCCESS_PATT=`echo -e '\033[01;42m'`       # green
 C_NORM=`echo -e '\033[m'`                    # normal
 
-# here put backup files, ...
+# Files the should not be tracked
 FILE_EXCLUDE_PATT='#.*#'
 
-# I don't know exactly why, but I have to call cake midje one time before the loop for the output to be shown
-cake midje
+run_cake()
+{
+  # Run midje
+  MIDJE_RESULT=`cake midje`
+
+  # Get results
+  ERROR="$(echo "$MIDJE_RESULT" | grep "Caused by:")"
+  FAILURE="$(echo "$MIDJE_RESULT" | grep "FAIL")"
+  SUCCESS="$(echo "$MIDJE_RESULT" | grep "All claimed facts")"
+
+  if [ "$ERROR" ]; then
+    echo "Error"
+    return
+  fi
+
+  if [ "$FAILURE" ]; then
+    echo "Fail"
+    return
+  fi
+
+  if [ "$SUCCESS" ]; then
+    echo "Success"
+    return
+  fi
+
+  #cake midje | grep "Caused by" | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
+}
 
 while true
 do
-    cake midje | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
+  run_cake
 
-    inotifywait --exclude "$FILE_EXCLUDE_PATT" -r -e modify . 2> /dev/null
+  #Wait for modifications
+  inotifywait --exclude "$FILE_EXCLUDE_PATT" -r -e modify . 2> /dev/null
+
 done
