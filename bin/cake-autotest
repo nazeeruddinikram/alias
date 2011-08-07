@@ -24,21 +24,21 @@ run_cake()
   SUCCESS="$(echo "$MIDJE_RESULT" | grep "All claimed facts")"
 
   if [ "$ERROR" ]; then
-    echo "Error"
+    echo "$MIDJE_RESULT" | grep "Caused by:"
     return
   fi
 
   if [ "$FAILURE" ]; then
-    echo "Fail"
+    echo "$MIDJE_RESULT" | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi"
     return
   fi
 
   if [ "$SUCCESS" ]; then
-    echo "Success"
+    echo "$MIDJE_RESULT" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
     return
   fi
 
-  #cake midje | grep "Caused by" | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
+  #cake midje | sed "s¬$ERROR_PATT¬$C_ERROR_PATT&$C_NORM¬gi" | sed "s¬$SUCCESS_PATT¬$C_SUCCESS_PATT&$C_NORM¬gi"
 }
 
 while true
