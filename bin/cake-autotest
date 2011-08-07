@@ -16,7 +16,7 @@ FILE_EXCLUDE_PATT='#.*#'
 run_cake()
 {
   # Run midje
-  MIDJE_RESULT=`cake midje`
+  MIDJE_RESULT=`cake midje 2>/dev/null`
 
   # Get results
   ERROR="$(echo "$MIDJE_RESULT" | grep "Caused by:")"
