@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# starts a new screen in current directory
+dupscreen()
+{
+  screen 1 bash -c "cd \"$PWD\" && exec $SHELL --login"
+}
