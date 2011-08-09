@@ -19,6 +19,9 @@ if [ -n "$PS1" ]; then
     . "$file"
   done;
 
+  # Key bindings
+  . "$BASEDIR/keybindings"
+
   # Start screen
   if [ -z "$STY" ]; then
     exec screen -RR

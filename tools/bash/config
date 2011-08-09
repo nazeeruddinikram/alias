@@ -10,5 +10,3 @@ HISTSIZE=3000
 HISTFILESIZE=5000
 
 shopt -s checkwinsize
-
-bind '"\C-o":"ranger\C-m"'
