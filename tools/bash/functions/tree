@@ -1,6 +1,6 @@
 #!/bin/sh
 
-t()
+lt()
 {
   if [ "$#" -eq "0" ]; then
     levels=1
