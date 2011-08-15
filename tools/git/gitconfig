@@ -1,0 +1,20 @@
+[user]
+	name = juanibiapina
+	email = juanibiapina@gmail.com
+[color]
+  ui = true
+[diff]
+  ignoreSubmodules = dirty
+[alias]
+  d = diff
+  a = add
+  sh = show
+  s = status
+  ci = commit
+  co = checkout
+  l = log --date=local
+  c = diff --cached
+  svrb = svn rebase
+  cp = cherry-pick
+[core]
+  excludesfile = /home/juanibiapina/.gitignore
