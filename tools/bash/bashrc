@@ -22,6 +22,11 @@ if [ -n "$PS1" ]; then
   # Key bindings
   . "$BASEDIR/keybindings"
 
+  # Set current directory
+  if [ -f "/tmp/last_dir" ]; then
+    cd "$(cat /tmp/last_dir)"
+  fi
+
   # Start screen
   if [ -z "$STY" ]; then
     exec screen -RR
