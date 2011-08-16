@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sdiff()
+{
+  if [ "$#" -ne "1" ]; then echo "Usage: sdiff path/to/file" >&2; return 1; fi
+
+  file="$1"
+  if [ ! -f "$1" ]; then echo "File not found: $1" >&2; exit 1; fi
+
+  file_with_path="$(git rev-parse --show-prefix)$1"
+  vimdiff <(git show $(git log --format="%h" -n 1 "$file"):"$file_with_path") \
+    <(git show $(git log --format="%h" --skip=1 -n 1 "$file"):"$file_with_path")
+}
