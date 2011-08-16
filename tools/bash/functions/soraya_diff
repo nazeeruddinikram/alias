@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sdiff()
+so_diff()
 {
   if [ "$#" -ne "1" ]; then echo "Usage: sdiff path/to/file" >&2; return 1; fi
 
