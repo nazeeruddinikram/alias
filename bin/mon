@@ -101,10 +101,10 @@ case "$ACTION" in
        toggle)
                screen_toggle
                ;;
-       internal)
+       i)
                screen_internal
                ;;
-       external)
+       e)
                screen_external
                ;;
        mirror)
