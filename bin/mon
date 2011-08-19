@@ -94,7 +94,7 @@ function screen_toggle(){
 # What should we do?
 ACTION="$1"
 if [ -z "$ACTION" ]; then
-    ACTION="toggle"
+    ACTION="none"
 fi
  
 case "$ACTION" in
@@ -120,12 +120,12 @@ case "$ACTION" in
                $SU xrandr | grep "\Wconnected" | sed "s/^/ /"
                ;;
        *)
-               echo "usage: $0 <command>" >&2
+               echo "usage: mon <command>" >&2
                echo >&2
                echo "  commands:" >&2
                echo "          status" >&2
-               echo "          internal" >&2
-               echo "          external" >&2
+               echo "          i" >&2
+               echo "          e" >&2
                echo "          mirror" >&2
                echo "          both" >&2
                echo "          toggle" >&2
