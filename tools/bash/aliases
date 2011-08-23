@@ -34,3 +34,6 @@ alias l='ls -CF'
 
 # edit aliases
 alias aliases='vi ~/development/alias/tools/bash/aliases'
+
+# cat for code
+alias catcode='highlight -s vim-dark -M'
