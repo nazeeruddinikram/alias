@@ -8,7 +8,7 @@ hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= %c"
 maptimeout 0
 
 # Set terminal as xterm compatible
-term xterm
+term xterm-256color
 
 # Remove the screen 0
 bind c screen 1
@@ -16,7 +16,7 @@ bind ^c screen 1
 bind 0 select 10
 screen 1
 
-# Enabling 256 colors
+# Enabling 256 colors for screen
 attrcolor b ".I"
 termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce "on"
