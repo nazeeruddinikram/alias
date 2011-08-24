@@ -16,5 +16,6 @@
   c = diff --cached
   svrb = svn rebase
   cp = cherry-pick
+  b = branch
 [core]
   excludesfile = /home/juanibiapina/.gitignore
