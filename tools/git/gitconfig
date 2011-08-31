@@ -17,5 +17,7 @@
   svrb = svn rebase
   cp = cherry-pick
   b = branch
+  time-machine = "!time-machine"
+  tm = "!time-machine"
 [core]
   excludesfile = /home/juanibiapina/.gitignore
