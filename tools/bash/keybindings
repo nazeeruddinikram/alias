@@ -1,4 +1,3 @@
 #!/bin/sh
 
 bind '"\C-o":"ranger\C-m"'
-bind '"\C-n":"dupscreen\C-m"'
