@@ -16,3 +16,7 @@ XTerm*color12:     #4186be
 XTerm*color13:     #cf9ebe
 XTerm*color14:     #71bebe
 XTerm*color15:     #ffffff
+
+XTerm*renderFont: true
+XTerm*faceName: mono
+XTerm*faceSize: 10
