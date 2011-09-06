@@ -1,0 +1,7 @@
+(if
+   (is (application_name) "xterm")
+   (begin
+      (undecorate)
+      (fullscreen)
+   )
+)
