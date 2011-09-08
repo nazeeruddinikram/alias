@@ -16,6 +16,3 @@
 [submodule "tools/vim/bundle/L9"]
 	path = tools/vim/bundle/L9
 	url = https://github.com/vim-scripts/L9.git
-[submodule "tools/vim/bundle/git-vim"]
-	path = tools/vim/bundle/git-vim
-	url = https://github.com/motemen/git-vim.git
