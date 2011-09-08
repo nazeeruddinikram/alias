@@ -22,3 +22,5 @@ XTerm*color15: #eeeeec
 XTerm*renderFont: true
 XTerm*faceName: mono
 XTerm*faceSize: 10
+
+XTerm*visualBell: false
