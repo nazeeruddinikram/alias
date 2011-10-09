@@ -1,5 +1,5 @@
 (if
-   (is (application_name) "xterm")
+   (is (application_name) "qxterm")
    (begin
       (skip_pager)
       (skip_tasklist)
