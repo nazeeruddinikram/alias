@@ -3,7 +3,6 @@
    (begin
       (skip_pager)
       (skip_tasklist)
-      (stick)
       (undecorate)
       (fullscreen)
    )
