@@ -12,4 +12,4 @@ cd
 mkdir -p development
 cd development
 rm -rf alias
-git clone git://github.com/juanibiapina/alias.git
+git clone --recursive git://github.com/juanibiapina/alias.git
