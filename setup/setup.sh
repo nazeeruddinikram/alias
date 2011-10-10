@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo apt-get install puppet-common -y
+sudo apt-get install puppet-common git -y
