@@ -36,3 +36,10 @@ file {'/home/juanibiapina/.bashrc':
   owner => 'juanibiapina',
   group => 'juanibiapina',
 }
+
+file {'/home/juanibiapina/bin':
+  ensure => link,
+  target => '/home/juanibiapina/development/alias/bin',
+  owner => 'juanibiapina',
+  group => 'juanibiapina',
+}
