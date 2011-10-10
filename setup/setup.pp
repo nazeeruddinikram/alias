@@ -29,3 +29,10 @@ file {'/home/juanibiapina/.screenrc':
   group => 'juanibiapina',
   require => Package['screen'],
 }
+
+file {'/home/juanibiapina/.bashrc':
+  ensure => link,
+  target => '/home/juanibiapina/development/alias/tools/bash/bashrc',
+  owner => 'juanibiapina',
+  group => 'juanibiapina',
+}
