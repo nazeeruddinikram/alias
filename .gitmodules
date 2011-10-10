@@ -19,3 +19,6 @@
 [submodule "tools/vim/bundle/vim-fugitive"]
 	path = tools/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "tools/vim/bundle/vim-puppet"]
+	path = tools/vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
