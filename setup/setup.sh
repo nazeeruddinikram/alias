@@ -19,4 +19,4 @@ echo 'Running puppet'
 echo '-------------------------------------------------------------------------------------------'
 cd alias
 cd setup
-sudo puppet apply setup.pp
+sudo puppet apply --modulepath=/home/juanibiapina/development/alias/setup/modules setup.pp
