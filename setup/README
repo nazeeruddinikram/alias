@@ -1,0 +1,4 @@
+Setup script for my linux box.
+
+wget path/to/setup.sh
+./setup.sh
