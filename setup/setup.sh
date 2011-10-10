@@ -19,4 +19,4 @@ echo 'Running puppet'
 echo '-------------------------------------------------------------------------------------------'
 cd alias
 cd setup
-puppet apply setup.pp
+sudo puppet apply setup.pp
