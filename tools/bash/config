@@ -1,9 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
 export PATH=$PATH:~/bin
 
 PS1='$( if [[ ${?#0} = "" ]]; then echo "\[\e[01;32m\]:) \[\e[00m\]"; else echo "\[\e[01;31m\]:( \[\e[00m\]" ; fi)'
-PROMPT_COMMAND='echo $PWD > /tmp/last_dir'
 
 HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
@@ -11,3 +10,10 @@ HISTSIZE=3000
 HISTFILESIZE=5000
 
 shopt -s checkwinsize
+
+prompt_function()
+{
+  echo $PWD > /tmp/last_dir
+}
+
+PROMPT_COMMAND=prompt_function
