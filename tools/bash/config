@@ -14,7 +14,7 @@ shopt -s checkwinsize
 prompt_function()
 {
   [ -n "${STY}" ] && screen -S ${STY} -X chdir "$(pwd)"
-  [ -n "${STY}" ] && screen -S ${STY} -X hardstatus string "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= $(cwd) %c"
+  [ -n "${STY}" ] && screen -S ${STY} -X hardstatus string "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= $(cwd)$(parse_git_branch) %c"
 }
 
 PROMPT_COMMAND=prompt_function
