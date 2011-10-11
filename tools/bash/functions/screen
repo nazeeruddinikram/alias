@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# starts a new screen in current directory
-dupscreen()
-{
-  screen 1
-}
