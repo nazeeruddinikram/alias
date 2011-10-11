@@ -1,7 +1,7 @@
 # Removes copyright message
 startup_message off
 
-# Satus line
+# Initial Status line (overwritten)
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %= %c"
 
 # Fixes delay after pressing ESC on vi

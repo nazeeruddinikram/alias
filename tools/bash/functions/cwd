@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cwd(){
+  echo "$(pwd | sed 's/\/home\//~/' | sed "s/~${USER}\(\/\)\?/~\//")"
+}
