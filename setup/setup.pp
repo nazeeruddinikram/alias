@@ -3,3 +3,4 @@ class {'screen':}
 class {'bash':}
 class {'git':}
 class {'x':}
+class {'devilspie':}
