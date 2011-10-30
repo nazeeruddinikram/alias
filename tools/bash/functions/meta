@@ -1,0 +1,6 @@
+#!/bin/bash
+
+enable_full_git_info(){
+  mkdir -p .meta
+  touch .meta/full_git_info
+}
