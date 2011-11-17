@@ -2,3 +2,9 @@ Setup script for my linux box.
 
 wget https://raw.github.com/juanibiapina/alias/master/setup/setup.sh
 sh setup.sh
+
+TODO
+  - Install chrome
+  - Fix puppet bug on ubuntu package
+  - Use gconf to set shortcuts
+  - Configure sudo
