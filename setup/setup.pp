@@ -6,3 +6,4 @@ class {'x':}
 class {'devilspie':}
 class {'sudo':}
 class {'gnomedo':}
+class {'software':}
