@@ -5,7 +5,6 @@ sh setup.sh
 
 TODO
   - Change default terminal to xterm
-  - Add devilspie to autostart
   - Install chrome
   - Install chrome extensions
     - vimlike smoozie

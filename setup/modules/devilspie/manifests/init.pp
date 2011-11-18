@@ -10,4 +10,12 @@ class devilspie {
     group => 'juanibiapina',
     require => Package['devilspie'],
   }
+
+  file {'/home/juanibiapina/.config/autostart/devilspie.desktop':
+    ensure => present,
+    owner => 'juanibiapina',
+    group => 'juanibiapina',
+    require => Package['devilspie'],
+    source => "puppet://$servername/modules/devilspie/devilspie.desktop",
+  }
 }
