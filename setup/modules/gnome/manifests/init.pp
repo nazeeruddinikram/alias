@@ -3,7 +3,10 @@ class gnome {
     ensure => installed,
   }
 
-  exec {'make_caps_be_super':
-    command => "/bin/su juanibiapina -c \"/usr/bin/gconftool-2 --config-source='xml::/home/juanibiapina/.gconf' --type list --list-type string --set /desktop/gnome/peripherals/keyboard/kbd/options '[terminate	terminate:ctrl_alt_bksp,caps	caps:super]'\"",
+  gconf {'make_caps_be_super':
+    key => '/desktop/gnome/peripherals/keyboard/kbd/options',
+    value => '[terminate	terminate:ctrl_alt_bksp,caps	caps:super]',
+    type => 'list',
+    listtype => 'string',
   }
 }
