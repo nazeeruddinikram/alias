@@ -5,5 +5,5 @@ class {'git':}
 class {'x':}
 class {'devilspie':}
 class {'sudo':}
-class {'gnomedo':}
 class {'software':}
+class {'gnome':}
