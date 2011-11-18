@@ -4,6 +4,7 @@ wget https://raw.github.com/juanibiapina/alias/master/setup/setup.sh
 sh setup.sh
 
 TODO
+  - Hide gnome-do on startup
   - Fix caps lock
   - Add shorcut to drop down terminal
   - Add shorcuts to move between desktops
