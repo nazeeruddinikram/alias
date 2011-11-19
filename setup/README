@@ -6,7 +6,6 @@ sh setup.sh
 TODO
   - Hide gnome-do on startup
   - Add shorcut to drop down terminal
-  - Add shorcuts to move between desktops
   - Add shortcuts for common applications
   - Add compiz features
   - Change default terminal to xterm
