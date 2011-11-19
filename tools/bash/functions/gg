@@ -3,7 +3,7 @@
 gg()
 {
     declare -A aliases
-    aliases["gid"]='/opt/development/gid'
+    aliases["gid"]='/home/juanibiapina/development/gid'
     aliases["p"]='/opt/development/preflight/'
     aliases["qa"]='/opt/development/gid/qa/tests/browser/'
     aliases["dev"]='/home/juanibiapina/development/'
