@@ -27,4 +27,7 @@ if [ -n "$PS1" ]; then
     exec screen -RR
   fi
 
+  # Fortune
+  fortune -s -n 260 -a | cowsay
+
 fi
