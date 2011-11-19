@@ -22,6 +22,12 @@ class gnome {
     type => 'int',
   }
 
+  gconf {'set_desktops':
+    key => '/apps/compiz-1/general/screen0/options/number_of_desktops',
+    value => '9',
+    type => 'int',
+  }
+
   gconf {'switch_to_workspace_right':
     key => '/apps/metacity/global_keybindings/switch_to_workspace_right',
     value => '<Mod4>l',
@@ -104,5 +110,24 @@ class gnome {
     key => '/apps/metacity/global_keybindings/run_command_terminal',
     value => '<Mod4>t',
     type => 'string',
+  }
+
+  gconf {'run_command_drop_down_term':
+    key => '/apps/metacity/global_keybindings/run_command_1',
+    value => '<Mod4>n',
+    type => 'string',
+  }
+
+  gconf {'command_1':
+    key => '/apps/metacity/keybinding_commands/command_1',
+    value => 'toggle -n qxterm -c \"xterm -name qxterm\"',
+    type => 'string',
+  }
+
+  gconf {'enable_compiz_plugins':
+    key => '/apps/compiz-1/general/screen0/options/active_plugins',
+    value => '[core,bailer,detection,composite,opengl,decor,place,snap,resize,imgpng,mousepoll,commands,compiztoolbox,vpswitch,regex,wall,gnomecompat,session,move,grid,animation,expo,ezoom,staticswitcher,workarounds,fade,scale]',
+    type => 'list',
+    listtype => 'string',
   }
 }
