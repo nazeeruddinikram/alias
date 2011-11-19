@@ -118,9 +118,21 @@ class gnome {
     type => 'string',
   }
 
+  gconf {'terminal_scrollback_buffer':
+    key => '/apps/gnome-terminal/profiles/Default/scrollback_lines',
+    value => '1024',
+    type => 'int',
+  }
+  
+  gconf {'hide_terminal_scrollbar':
+    key => '/apps/gnome-terminal/profiles/Default/scrollbar_position',
+    value => 'hidden',
+    type => 'string',
+  }
+
   gconf {'command_1':
     key => '/apps/metacity/keybinding_commands/command_1',
-    value => 'toggle -n qxterm -c \"xterm -name qxterm\"',
+    value => 'toggle -n qterminal -c \"gnome-terminal --hide-menubar -t qterminal\"',
     type => 'string',
   }
 

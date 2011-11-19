@@ -1,0 +1,9 @@
+(if
+   (is (window_name) "qterminal")
+   (begin
+      (skip_pager)
+      (skip_tasklist)
+      (undecorate)
+      (fullscreen)
+   )
+)

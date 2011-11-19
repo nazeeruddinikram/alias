@@ -1,27 +1,27 @@
 ! Tango Color Scheme
-XTerm*foreground: #ffffff
+! XTerm*foreground: #ffffff
 ! XTerm*background: #2e2e2e
-XTerm*background:  #000000
-XTerm*color0: #2e3436
-XTerm*color1: #cc0000
-XTerm*color2: #4e9a06
-XTerm*color3: #c4a000
-XTerm*color4: #3465a4
-XTerm*color5: #75507b
-XTerm*color6: #0b939b
-XTerm*color7: #d3d7cf
-XTerm*color8: #555753
-XTerm*color9: #ef2929
-XTerm*color10: #8ae234
-XTerm*color11: #fce94f
-XTerm*color12: #729fcf
-XTerm*color13: #ad7fa8
-XTerm*color14: #00f5e9
-XTerm*color15: #eeeeec
+! XTerm*background:  #000000
+! XTerm*color0: #2e3436
+! XTerm*color1: #cc0000
+! XTerm*color2: #4e9a06
+! XTerm*color3: #c4a000
+! XTerm*color4: #3465a4
+! XTerm*color5: #75507b
+! XTerm*color6: #0b939b
+! XTerm*color7: #d3d7cf
+! XTerm*color8: #555753
+! XTerm*color9: #ef2929
+! XTerm*color10: #8ae234
+! XTerm*color11: #fce94f
+! XTerm*color12: #729fcf
+! XTerm*color13: #ad7fa8
+! XTerm*color14: #00f5e9
+! XTerm*color15: #eeeeec
 
 XTerm*renderFont: true
 XTerm*faceName: mono
 XTerm*faceSize: 10
 
 XTerm*visualBell: false
-XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+! XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
