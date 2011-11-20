@@ -136,6 +136,24 @@ class gnome {
     type => 'string',
   }
 
+  gconf {'close_window':
+    key => '/apps/metacity/window_keybindings/close',
+    value => '<Super>q',
+    type => 'string',
+  }
+
+  gconf {'maximize_window':
+    key => '/apps/metacity/window_keybindings/toggle_maximized',
+    value => '<Super>a',
+    type => 'string',
+  }
+
+  gconf {'minimize_window':
+    key => '/apps/metacity/window_keybindings/minimize',
+    value => '<Super>z',
+    type => 'string',
+  }
+
   gconf {'enable_compiz_plugins':
     key => '/apps/compiz-1/general/screen0/options/active_plugins',
     value => '[core,bailer,detection,composite,opengl,decor,place,snap,resize,imgpng,mousepoll,commands,compiztoolbox,vpswitch,regex,wall,gnomecompat,session,move,grid,animation,expo,ezoom,staticswitcher,workarounds,fade,scale]',
