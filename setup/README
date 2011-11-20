@@ -5,10 +5,8 @@ sh setup.sh
 
 TODO
   - Hide gnome-do on startup
-  - Add shorcut to drop down terminal
-  - Add shortcuts for common applications
+  - Add chrome shortcut
   - Add compiz features
-  - Change default terminal to xterm
   - Install chrome
   - Install chrome extensions
     - vimlike smoozie
