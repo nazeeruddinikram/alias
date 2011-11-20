@@ -1,8 +1,3 @@
-Setup script for my linux box.
-
-wget https://raw.github.com/juanibiapina/alias/master/setup/setup.sh
-sh setup.sh
-
 TODO
   - Hide gnome-do on startup
   - Add chrome shortcut

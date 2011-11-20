@@ -1,1 +1,6 @@
-Scripts and aliases
+Configuration for my linux box.
+
+Setup:
+
+wget https://raw.github.com/juanibiapina/alias/master/setup/setup.sh
+sh setup.sh
