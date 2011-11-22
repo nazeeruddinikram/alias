@@ -24,7 +24,7 @@ class gnome {
 
   gconf {'set_desktops':
     key => '/apps/compiz-1/general/screen0/options/number_of_desktops',
-    value => '9',
+    value => '1',
     type => 'int',
   }
 
