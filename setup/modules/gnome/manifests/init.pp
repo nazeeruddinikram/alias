@@ -28,6 +28,12 @@ class gnome {
     type => 'int',
   }
 
+  gconf {'remove_move_command':
+    key => '/apps/metacity/window_keybindings/begin_move',
+    value => 'disabled',
+    type => 'string',
+  }
+
   gconf {'switch_to_workspace_right':
     key => '/apps/metacity/global_keybindings/switch_to_workspace_right',
     value => '<Mod4>l',
