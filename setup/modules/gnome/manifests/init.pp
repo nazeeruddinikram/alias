@@ -126,7 +126,7 @@ class gnome {
 
   gconf {'terminal_scrollback_buffer':
     key => '/apps/gnome-terminal/profiles/Default/scrollback_lines',
-    value => '1024',
+    value => '4024',
     type => 'int',
   }
   
