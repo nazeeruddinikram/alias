@@ -34,6 +34,18 @@ class gnome {
     type => 'string',
   }
 
+  gconf {'remove_window_picker_all':
+    key => '/apps/compiz-1/plugins/scale/screen0/options/initiate_all_key',
+    value => 'disabled',
+    type => 'string',
+  }
+
+  gconf {'window_picker_current_viewport':
+    key => '/apps/compiz-1/plugins/scale/screen0/options/initiate_key',
+    value => '<Super>w',
+    type => 'string',
+  }
+
   gconf {'switch_to_workspace_right':
     key => '/apps/metacity/global_keybindings/switch_to_workspace_right',
     value => '<Mod4>l',
