@@ -46,6 +46,12 @@ class gnome {
     type => 'string',
   }
 
+  gconf {'change_lock_screen':
+    key => '/apps/gnome_settings_daemon/keybindings/screensaver',
+    value => '<Shift><Control><Alt>l',
+    type => 'string',
+  }
+
   gconf {'window_picker_current_viewport':
     key => '/apps/compiz-1/plugins/scale/screen0/options/initiate_key',
     value => '<Super>w',
