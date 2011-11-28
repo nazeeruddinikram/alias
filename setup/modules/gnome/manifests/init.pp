@@ -40,6 +40,12 @@ class gnome {
     type => 'string',
   }
 
+  gconf {'expo_key':
+    key => '/apps/compiz-1/plugins/expo/screen0/options/expo_key',
+    value => '<Super>e',
+    type => 'string',
+  }
+
   gconf {'window_picker_current_viewport':
     key => '/apps/compiz-1/plugins/scale/screen0/options/initiate_key',
     value => '<Super>w',
