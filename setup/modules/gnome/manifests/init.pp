@@ -3,9 +3,9 @@ class gnome {
     ensure => installed,
   }
 
-  gconf {'make_caps_be_super':
+  gconf {'make_caps_be_super_and_other_keys':
     key => '/desktop/gnome/peripherals/keyboard/kbd/options',
-    value => '[terminate	terminate:ctrl_alt_bksp,caps	caps:super]',
+    value => '[terminate	terminate:ctrl_alt_bksp,caps	caps:super,grp	grp:sclk_toggle]',
     type => 'list',
     listtype => 'string',
   }
