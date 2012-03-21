@@ -42,3 +42,6 @@ alias run_allocation_iso='while sleep 1; do echo "Going ..."; curl -s "http://ft
 alias run_allocation_quick='while sleep 1; do echo "Going ..."; curl -s "http://sfci-l01.gid.gap.com:8000/invoke?operation=build&objectname=CruiseControl+Project:name=trunk-allocation-quick" | grep Invocation; done'
 
 alias be='bundle exec'
+
+alias rg='rgrep'
+alias rgi='rgrep -i'
