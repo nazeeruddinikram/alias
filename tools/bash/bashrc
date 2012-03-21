@@ -2,7 +2,11 @@
 
 if [ -n "$PS1" ]; then
 
-  BASEDIR=$(dirname $(readlink ${BASH_SOURCE[0]}))
+  BASEFILE=${BASH_SOURCE[0]}
+  if [ -L "$BASEFILE" ]; then
+    BASEFILE=$(readlink -f "$BASEFILE")
+  fi
+  BASEDIR=$(dirname ${BASEFILE})
 
   # Ubuntu stuff
   . "$BASEDIR/ubuntu"
