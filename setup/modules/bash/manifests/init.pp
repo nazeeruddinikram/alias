@@ -3,6 +3,10 @@ class bash {
     ensure => installed,
   }
 
+  package {'highlight':
+    ensure => installed,
+  }
+
   file {'/home/juanibiapina/.bashrc':
     ensure => link,
     target => '/home/juanibiapina/development/alias/tools/bash/bashrc',
