@@ -1,0 +1,35 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/juanibiapina/.emacs.d/" . "elpa/")
+ ("/home/juanibiapina/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ 
+)
+
+;; ----- ido-work-file-list -----
+(
+ 
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/juanibiapina/.emacs.d/elpa/" (20346 681) "smex-1.1.2/" "./" "find-file-in-project-3.0/" "archives/" "starter-kit-2.0.3/" "ido-ubiquitous-1.0/" "paredit-22/" "idle-highlight-mode-1.1.2/" "magit-1.1.1/" "../")
+
+ ("/home/juanibiapina/.emacs.d/" (20346 482) "./" "auto-save-list/" "elpa/" "../")
+
+ ("/home/juanibiapina/" (20346 647) ".xsession-errors" ".subversion_IDEA/" ".vim-fuf-data/" ".dbus/" ".macromedia/" ".fontconfig/" ".profile" "Public/" ".cache/" ".InstallAnywhere/" "bin/" ".com.zerog.registry.xml" ".esd_auth" "./" ".emacs.d/" "feedback/" "Downloads/" ".ssh/" ".keystore" ".jline-clojure.main.history" ".Xauthority" ".nautilus/" ".dmrc" ".subversion/" ".bash_logout" "development/" ".gconf/" ".gegl-0.0/" ".bash_history" ".pulse-cookie" "Pictures/" ".viminfo" "Desktop/" ".NERDTreeBookmarks" ".gitconfig" ".config/" ".ICEauthority" ".adobe/" ".gitignore" ".gbas.so" ".gtk-recordmydesktop" ".java/" "Documents/" ".xsession-errors.old" ".screenrc" ".gstreamer-0.10/" ".pulse/" ".compiz/" ".opera/" ".purple/" ".aptitude/" ".Skype/" ".gbas" "Backup/" ".vimrc" ".lein/" ".icons/" ".rvm/" ".odbc.ini" ".gnome2/" ".gbas.so_u" ".xinput.d/" ".0gbas.so_u" ".gvfs/" ".IntelliJIdea10/" ".wine/" ".devilspie/" ".jxplorer/" ".sudo_as_admin_successful" ".sqldeveloper/" ".emacs" ".1gbas.so_u" ".gnome2_private/" ".matplotlib/" ".cake_history" ".gtk-bookmarks" ".pki/" ".thumbnails/" ".mozilla/" ".themes/" ".linuxmint/" ".bashrc" ".gem/" ".vim/" ".quicksynergy/" ".cake/" ".emacs~" "Software/" ".mplayer/" ".lesshst" ".avidemux/" ".ghc/" ".m2/" ".hplip/" ".libreoffice/" ".remmina/" ".gimp-2.6/" ".gconfd/" ".gksu.lock" ".cabal/" ".Xresources" ".local/" "../")
+
+ ("/etc/" (20345 64728) "ODBCDataSources/" "rcS.d/" "at.deny" "cron.weekly/" "init.d/" "mtools.conf" "gre.d/" "openoffice/" "rc.local" "motd" "security/" "wpa_supplicant/" "resolv.conf" "papersize" "bindresvport.blacklist" "ca-certificates.conf.dpkg-old" "shells" "printcap" "linuxmint/" "java-6-sun/" "ld.so.conf.d/" "lsb-release" "mtab.fuselock" "crypttab" "foomatic/" "mplayer/" "su-to-rootrc" "sensors3.conf" "rpc" "doc-base/" "calendar/" "init/" "modules" "sudoers.d/" "gtk-3.0/" "passwd" "compizconfig/" "hosts.deny" "lftp.conf" "request-key.conf" "ca-certificates.conf" "xdg/" "purple/" "pnm2ppa.conf" "sudoers" "ld.so.conf" "gtk-2.0/" "gnome-vfs-mime-magic" "logrotate.d/" "thunderbird/" "mtab" "update-manager/" "insserv/" "update-notifier/" "brlapi.key" "insserv.conf" "logcheck/" "obex-data-server/" "sensors.d/" "login.defs" "modprobe.d/" "subversion/" "rc0.d/" "pam.d/" "manpath.config" "debian_version" "ginn/" "mono/" "esound/" "pm/" "insserv.conf.d/" "wildmidi/" "protocols" "dnsmasq.d/" "group-" "gshadow-" "passwd-" "kbd/" "mime.types" "puppet/" "inputrc" "skel/" "adduser.conf" "localtime" "usb_modeswitch.d/" "rc6.d/" "xulrunner-1.9.2/" "bonobo-activation/" "dpkg/" ".java/" "network/" "vga/" "alternatives/" "sound/" "avahi/" "samba/" "gimp/" "groff/" "NetworkManager/" "bash_completion.d/" "dnsmasq.conf" ".pwd.lock" "rsyslog.d/" "cron.daily/" "dhcp/" "update-motd.d/" "host.conf" "anacrontab" "xml/" "sane.d/" "hddtemp.db" "shadow" "kerneloops.conf" "blkid.conf" "rc3.d/" "gamin/" "vpnc/" "menu-methods/" "vim/" "cron.d/" "sysctl.d/" "magic.mime" "depmod.d/" "ldap/" "hdparm.conf" "chatscripts/" "issue.net" "debconf.conf" "legal" "sysctl.conf" "rc2.d/" "ucf.conf" "mysql/" "python2.7/" "ssh/" "gnome-settings-daemon/" "networks" "rsyslog.conf" "hosts" "python/" "resolvconf/" "profile" "lintianrc" "firefox/" "vlc/" "pam.conf" "ConsoleKit/" "mke2fs.conf" "bash.bashrc" "opt/" "acpi/" "cupshelpers/" "rmt" "hostname" "console-setup/" "gnome-system-tools/" "ts.conf" "apport/" "odbc.ini" "kernel/" "environment" "polkit-1/" "X11/" "magic" "securetty" "crontab" "brltty/" "pcmcia/" "bogofilter.cf" "cron.hourly/" "lsb-base-logging.sh" "ifplugd/" "dhcp3/" "terminfo/" "dkms/" "gai.conf" "fonts/" "openal/" "screenrc" "gdb/" "grub.d/" "UPower/" "gnome-vfs-2.0/" "netscsid.conf" "libpaper.d/" "mailcap" "nanorc" "locale.alias" "ssl/" "perl/" "ppp/" "gnome/" "rc1.d/" "gshadow" "cron.monthly/" "rc4.d/" "vtrgb" "emacs-snapshot/" "adjtime" "dictionaries-common/" "ufw/" "initramfs-tools/" "lsb-base/" "usb_modeswitch.conf" "apparmor.d/" "kernel-img.conf" "wodim.conf" "fuse.conf" "gdm/" "timezone" "ghostscript/" "nsswitch.conf" "snmp/" "updatedb.conf" "blkid.tab" "default/" "profile.d/" "fstab" "menu/" "ltrace.conf" "matplotlibrc" "ld.so.cache" "speech-dispatcher/" "defoma/" "deluser.conf" "bluetooth/" "iproute2/" "rc5.d/" "libreoffice/" "services" "dbus-1/" "ca-certificates/" "apparmor/" "hp/" "group" "apt/" "logrotate.conf" "apm/" "sgml/" "firefox-3.5/" "mailcap.order" "cups/" "highlight/" "hosts.allow" "newt/" "issue" "zsh_command_not_found" "wgetrc" "ndiswrapper/" "shadow-" "emacs/" "gconf/" "pulse/" "bash_completion" "udev/" "popularity-contest.conf" "../" "./")
+
+ ("/etc/apt/" (20345 64482) "trustdb.gpg" "trusted.gpg" "apt.conf.d/" "sources.list.save" "./" "secring.gpg" "apt.conf" "sources.list" "preferences" "trusted.gpg.d/" "sources.list.d/" "preferences.d/" "trusted.gpg~" "../")
+
+ ("/etc/apt/sources.list.d/" (20345 64480) "./" "cassou-emacs-natty.list" "local-repository.list.save" "anay-ppa-natty.list" "local-repository.list" "anay-ppa-natty.list.save" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

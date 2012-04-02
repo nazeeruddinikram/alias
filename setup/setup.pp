@@ -7,3 +7,4 @@ class {'devilspie':}
 class {'sudo':}
 class {'software':}
 class {'gnome':}
+class {'emacs':}
