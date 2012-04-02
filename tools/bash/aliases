@@ -45,3 +45,6 @@ alias be='bundle exec'
 
 alias rg='rgrep'
 alias rgi='rgrep -i'
+
+#emacs
+alias emacs='emacs -nw'
