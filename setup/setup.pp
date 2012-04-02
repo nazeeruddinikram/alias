@@ -1,6 +1,7 @@
 class {'vim':}
 class {'screen':}
 class {'bash':}
+class {'zsh':}
 class {'git':}
 class {'x':}
 class {'devilspie':}
