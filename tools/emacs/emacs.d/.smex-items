@@ -1,16 +1,17 @@
 
 ;; ----- smex-history -----
 (
+ package-install
  rename-file
  cd
  5x5
  arp
  dbx
  dig
- erc
 )
 
 ;; ----- smex-data -----
 (
  (rename-file . 1)
+ (package-install . 1)
 )
