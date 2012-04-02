@@ -22,3 +22,6 @@
 [submodule "tools/vim/bundle/vim-puppet"]
 	path = tools/vim/bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
+[submodule "tools/zsh/oh-my-zsh"]
+	path = tools/zsh/oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
