@@ -1,2 +1,3 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/juanibiapina/.emacs.d/elpa/clojure-mode-1.11.5/clojure-mode-autoloads.el" . 1101))
+(("/home/juanibiapina/.emacs.d/elpa/auctex-11.86/auctex-autoloads.el" . 10467)
+ ("/home/juanibiapina/.emacs.d/elpa/clojure-mode-1.11.5/clojure-mode-autoloads.el" . 1101))

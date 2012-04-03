@@ -18,6 +18,10 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/juanibiapina/development/alias/" (20346 16427) "bin/" "./" "setup/" ".gitmodules" "tools/" ".gitignore" "TODO" "README" ".git/" "../")
+
+ ("/home/juanibiapina/development/alias/bin/" (20340 48699) "bb" "toggle" "./" "cake-autotest" "time-machine" "mon" "lein" "ranger" "into-vpn" "colors" "../")
+
  ("/home/juanibiapina/.emacs.d/elpa/" (20346 681) "smex-1.1.2/" "./" "find-file-in-project-3.0/" "archives/" "starter-kit-2.0.3/" "ido-ubiquitous-1.0/" "paredit-22/" "idle-highlight-mode-1.1.2/" "magit-1.1.1/" "../")
 
  ("/home/juanibiapina/.emacs.d/" (20346 482) "./" "auto-save-list/" "elpa/" "../")
