@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+import xmpp
+import sys
+
+login = 'preposterousbot' # @gmail.com 
+pwd   = 'preposterousbot'
+message = 'DONE' if len(sys.argv) < 2 else sys.argv[1]
+
+cnx = xmpp.Client('gmail.com', debug=[])
+cnx.connect()
+cnx.auth(login,pwd, 'botty')
+
+cnx.send(xmpp.Message("juanibiapina@gmail.com", message))
