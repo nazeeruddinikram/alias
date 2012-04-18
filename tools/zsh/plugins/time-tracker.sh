@@ -9,16 +9,16 @@ report_time()
   echo "command '$CURRENT_COMMAND' completed in $1 seconds"
 }
 
-preexec()
+time-tracker-preexec()
 {
   if [ -n "$TTY" ]; then
     START_TIME="$SECONDS"
     IGNORE_TIME_TRACKING=""
-    CURRENT_COMMAND="$2"
+    CURRENT_COMMAND="$1"
   fi
 }
 
-precmd()
+time-tracker-precmd()
 {
   local xx
   if [ -n "$TTY" ]; then
@@ -31,3 +31,6 @@ precmd()
     fi
   fi
 }
+
+precmd_functions+=(time-tracker-precmd)
+preexec_functions+=(time-tracker-preexec)
