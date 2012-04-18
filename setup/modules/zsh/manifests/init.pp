@@ -3,11 +3,12 @@ class zsh {
     ensure => installed,
   }
 
-  file {'/home/juanibiapina/.zshrc':
-    ensure => link,
-    target => '/home/juanibiapina/development/alias/tools/zsh/zshrc',
-    owner => 'juanibiapina',
-    group => 'juanibiapina',
+  file {"${::home}/.zshrc":
+    ensure => present,
+    content => template("${::alias_home}/setup/template/zshrc.erb"),
+    owner => "${::user_name}",
+    group => "${::user_name}",
+    replace => no,
     require => Package['zsh'],
   }
 }

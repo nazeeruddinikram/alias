@@ -1,10 +1,12 @@
-class {'vim':}
-class {'screen':}
 class {'bash':}
 class {'zsh':}
+class {'tmux':}
+class {'screen':}
+class {'software':}
+class {'vim':}
 class {'git':}
 class {'x':}
+class {'xmodmap':}
 class {'devilspie':}
 class {'sudo':}
-class {'software':}
 class {'gnome':}

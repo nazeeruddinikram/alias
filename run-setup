@@ -1,0 +1,3 @@
+CWD=`pwd`
+sudo ALIAS_HOME="$CWD" USER_NAME="$USER" puppet apply --factpath="$CWD"/setup/facts --modulepath="$CWD"/setup/modules setup/setup.pp
+#sudo chsh -s `which zsh` "$USER"
