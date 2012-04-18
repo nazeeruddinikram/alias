@@ -48,3 +48,7 @@ alias rgi='rgrep -i'
 
 #emacs
 alias emacs='emacs -nw'
+
+# cd aliases
+alias ...='cd ../..'
+alias ....='cd ../../..'
