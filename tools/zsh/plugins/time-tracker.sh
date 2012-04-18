@@ -6,12 +6,6 @@ if [ -z "$TIME_TO_NOTIFY" ]; then
   TIME_TO_NOTIFY=30
 fi
 
-report_time()
-{
-  echo ""
-  echo "command '$CURRENT_COMMAND' completed in $1 seconds"
-}
-
 time-tracker-preexec()
 {
   if [ -n "$TTY" ]; then
@@ -29,7 +23,9 @@ time-tracker-precmd()
       IGNORE_TIME_TRACKING="yes"
       xx=$(($SECONDS-$START_TIME))
       if [ "$xx" -gt "$TIME_TO_NOTIFY" ]; then
-        report_time $xx
+        if [ -n "$(declare -f report_time)" ]; then
+          report_time "$xx" "$CURRENT_COMMAND"
+        fi
       fi
     fi
   fi
