@@ -3,7 +3,7 @@ IGNORE_TIME_TRACKING="yes"
 CURRENT_COMMAND="?"
 
 if [ -z "$TIME_TO_NOTIFY" ]; then
-  TIME_TO_NOTIFY=30
+  TIME_TO_NOTIFY=60
 fi
 
 time-tracker-preexec()
