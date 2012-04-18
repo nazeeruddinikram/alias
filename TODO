@@ -1,1 +1,17 @@
-inotify-tools
+software
+  - inotify-tools
+
+tmux
+  - make CTRL+. work
+  - remap to proper shortcuts
+  - fix status bar
+
+zsh
+  - make cool prompt
+  - extend gg to have dynamic dirs
+  - use autoload
+
+emacs
+  - install emacs smapshot
+  - install extra emacs repositories
+  - install packages
