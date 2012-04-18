@@ -1,7 +1,10 @@
 START_TIME=0
 IGNORE_TIME_TRACKING="yes"
 CURRENT_COMMAND="?"
-TIME_TO_NOTIFY=60
+
+if [ -z "$TIME_TO_NOTIFY" ]; then
+  TIME_TO_NOTIFY=30
+fi
 
 report_time()
 {
