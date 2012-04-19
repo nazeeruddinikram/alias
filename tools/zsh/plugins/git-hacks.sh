@@ -1,5 +1,5 @@
 # Update brazil-build sources
-update-build ()
+up ()
 {
     (gg bb; rake $1)
 }
