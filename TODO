@@ -15,3 +15,6 @@ emacs
   - install emacs smapshot
   - install extra emacs repositories
   - install packages
+
+setup
+  - force file overwrites for vim
