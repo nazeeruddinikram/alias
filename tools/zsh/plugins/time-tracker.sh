@@ -21,6 +21,9 @@ time-tracker-preexec()
     if [[ "$CURRENT_COMMAND" = fg* ]]; then
       IGNORE_TIME_TRACKING="yes"
     fi
+    if [[ "$CURRENT_COMMAND" = man* ]]; then
+      IGNORE_TIME_TRACKING="yes"
+    fi
   fi
 }
 
