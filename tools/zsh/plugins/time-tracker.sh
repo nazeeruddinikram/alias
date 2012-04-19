@@ -15,6 +15,9 @@ time-tracker-preexec()
     if [[ "$CURRENT_COMMAND" = vi* ]]; then
       IGNORE_TIME_TRACKING="yes"
     fi
+    if [[ "$CURRENT_COMMAND" = emacs* ]]; then
+      IGNORE_TIME_TRACKING="yes"
+    fi
   fi
 }
 
