@@ -6,7 +6,6 @@ class {'software':}
 class {'vim':}
 class {'git':}
 class {'x':}
-class {'xmodmap':}
 class {'devilspie':}
 class {'sudo':}
 class {'gnome':}
