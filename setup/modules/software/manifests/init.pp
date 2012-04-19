@@ -6,4 +6,8 @@ class software {
   package {'curl':
     ensure => installed,
   }
+
+  package {'compizconfig-settings-manager':
+    ensure => installed,
+  }
 }
