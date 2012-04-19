@@ -12,6 +12,9 @@ time-tracker-preexec()
     START_TIME="$SECONDS"
     IGNORE_TIME_TRACKING=""
     CURRENT_COMMAND="$1"
+    if [[ "$CURRENT_COMMAND" = vi* ]]; then
+      IGNORE_TIME_TRACKING="yes"
+    fi
   fi
 }
 
@@ -19,7 +22,7 @@ time-tracker-precmd()
 {
   local xx
   if [ -n "$TTY" ]; then
-    if [ "x$IGNORE_TIME_TRACKING" = "x" ]; then
+    if [ -z "$IGNORE_TIME_TRACKING" ]; then
       IGNORE_TIME_TRACKING="yes"
       xx=$(($SECONDS-$START_TIME))
       if [ "$xx" -gt "$TIME_TO_NOTIFY" ]; then
