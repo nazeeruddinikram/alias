@@ -162,7 +162,7 @@ class gnome {
 
   gconf {'command_1':
     key => '/apps/metacity/keybinding_commands/command_1',
-    value => 'toggle -n qterminal -c \"gnome-terminal --hide-menubar -t qterminal\"',
+    value => 'toggle -n qterminal -c \"gnome-terminal --full-screen --hide-menubar -t qterminal\"',
     type => 'string',
   }
 

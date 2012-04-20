@@ -6,6 +6,5 @@ class {'software':}
 class {'vim':}
 class {'git':}
 class {'x':}
-class {'devilspie':}
 class {'sudo':}
 class {'gnome':}
