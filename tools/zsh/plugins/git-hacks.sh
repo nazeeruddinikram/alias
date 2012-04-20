@@ -33,11 +33,11 @@ done
 send_commits() {
   if [ "$#" -ne "2" ]; then echo "Usage: send_commits number-of-commits /path/to/mounted/workspace/project" >&2; return 1; fi
 
-  git log --name-status -n "$1" | grep '^[A-Z][[:space:]]\+.*/.*' | sort -k2 | uniq -f1 | while read status line;
+  git log --name-status -n "$1" | grep '^[A-Z][[:space:]]\+.*/.*' | sort -k2 | uniq -f1 | while read fstatus line;
 do
   from="$line";
   to="${2}/${line#*/}";
-  case "$status" in
+  case "$fstatus" in
     A|M)
       echo /bin/cp -f "'${from}'" "'${to}'"
       mkdir -p "$(dirname "${to}")"
