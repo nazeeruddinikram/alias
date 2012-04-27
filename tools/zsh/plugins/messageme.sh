@@ -1,3 +1,3 @@
 report_time () {
-  messageme $1 $2
+  messageme $1 $2 &
 }
