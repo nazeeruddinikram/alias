@@ -1,27 +1,3 @@
-[submodule "vim/bundle/vim-pathogen"]
-	path = tools/vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/nerdtree"]
-	path = tools/vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/syntastic"]
-	path = tools/vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "tools/vim/bundle/VimClojure"]
-	path = tools/vim/bundle/VimClojure
-	url = https://github.com/vim-scripts/VimClojure.git
-[submodule "tools/vim/bundle/FuzzyFinder"]
-	path = tools/vim/bundle/FuzzyFinder
-	url = https://github.com/vim-scripts/FuzzyFinder.git
-[submodule "tools/vim/bundle/L9"]
-	path = tools/vim/bundle/L9
-	url = https://github.com/vim-scripts/L9.git
-[submodule "tools/vim/bundle/vim-fugitive"]
-	path = tools/vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "tools/vim/bundle/vim-puppet"]
-	path = tools/vim/bundle/vim-puppet
-	url = https://github.com/rodjek/vim-puppet.git
 [submodule "tools/zsh/oh-my-zsh"]
 	path = tools/zsh/oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
