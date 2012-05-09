@@ -1,12 +1,20 @@
-" Load pathogen
-source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
- 
 " Force filetype off because Ubuntu already enabled it
 filetype off
 
-" Start pathgen (load bundles)
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" Load vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Configure vundle modules
+
+Bundle 'gmarik/vundle'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
+Bundle 'VimClojure'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'rodjek/vim-puppet'
 
 " Use filetype plugin
 filetype indent plugin on
