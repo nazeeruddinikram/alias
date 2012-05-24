@@ -24,6 +24,7 @@ Bundle 'VimClojure'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'rodjek/vim-puppet'
+Bundle 'klen/python-mode'
 
 if isVundleInstalled == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -76,3 +77,6 @@ noremap <C-l> <C-w><Right>
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun=1
+
+" Python options
+let g:pymode_folding = 0
