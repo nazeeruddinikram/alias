@@ -9912,7 +9912,7 @@
       <key>/apps/metacity/window_keybindings/toggle_shaded</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/toggle_shaded</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;s</string>
+        <string></string>
       </value>
     </entry>
     <entry>
