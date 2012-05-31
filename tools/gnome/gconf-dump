@@ -7058,6 +7058,47 @@
       </value>
     </entry>
     <entry>
+      <key>/apps/gnome-do/preferences/Do/CorePreferences/AlwaysShowResults</key>
+      <schema_key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/AlwaysShowResults</schema_key>
+      <value>
+        <bool>false</bool>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/gnome-do/preferences/Do/CorePreferences/QuietStart</key>
+      <schema_key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/QuietStart</schema_key>
+      <value>
+        <bool>false</bool>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/gnome-do/preferences/Do/CorePreferences/SummonKeyBinding</key>
+      <schema_key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/SummonKeyBinding</schema_key>
+      <value>
+        <string>&lt;Super&gt;space</string>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/gnome-do/preferences/Do/CorePreferences/TextModeKeyBinding</key>
+      <schema_key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/TextModeKeyBinding</schema_key>
+      <value>
+        <string>period</string>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/gnome-do/preferences/Do/CorePreferences/Theme</key>
+      <schema_key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/Theme</schema_key>
+      <value>
+        <string>Classic</string>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/gnome-do/preferences/core-preferences/QuietStart</key>
+      <value>
+        <bool>true</bool>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/gnome-session/options/splash_image</key>
       <value>
         <string>splash/linuxmint.png</string>
@@ -31548,6 +31589,101 @@ Whether sudo should be the default backend method. This method
         is otherwise accessed though the -S switch or by running &apos;gksudo&apos;
         instead of &apos;gksu&apos;.
 </long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
+      <key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/AlwaysShowResults</key>
+      <value>
+        <schema>
+          <type>bool</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <bool>false</bool>
+              </value>
+            </default_value>
+            <short>Always show results window.</short>
+            <long>
+ Whether the results window will always show.
+         </long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
+      <key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/QuietStart</key>
+      <value>
+        <schema>
+          <type>bool</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <bool>false</bool>
+              </value>
+            </default_value>
+            <short>Hide main window when Do starts.</short>
+            <long>
+ Enable this option to keep Do from popping up as soon as it starts.
+         </long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
+      <key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/SummonKeyBinding</key>
+      <value>
+        <schema>
+          <type>string</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <string>&lt;Super&gt;space</string>
+              </value>
+            </default_value>
+            <short>Do summon keybinding.</short>
+            <long>
+ Set this to the key command you would like to use to summon Do.
+         </long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
+      <key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/TextModeKeyBinding</key>
+      <value>
+        <schema>
+          <type>string</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <string>period</string>
+              </value>
+            </default_value>
+            <short>Key used to enter text mode.</short>
+            <long>
+   Set this to the character that should be used to enter text mode.
+         </long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
+      <key>/schemas/apps/gnome-do/preferences/Do/CorePreferences/Theme</key>
+      <value>
+        <schema>
+          <type>string</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <string>Classic</string>
+              </value>
+            </default_value>
+            <short>Do UI theme</short>
+            <long>
+ Changes the appearence of Do. Valid entries are Classic, Glass Frame, and Mini.
+         </long>
           </locale>
         </schema>
       </value>
