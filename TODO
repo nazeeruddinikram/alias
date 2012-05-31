@@ -1,23 +1,2 @@
-software
-  - inotify-tools
-
-tmux
-  - make CTRL+. work
-  - remap to proper shortcuts
-  - fix status bar
-
-zsh
-  - make cool prompt
-  - extend gg to have dynamic dirs
-  - use autoload
-
-emacs
-  - install emacs smapshot
-  - install extra emacs repositories
-  - install packages
-
-setup
-  - force file overwrites for vim
-
-gnome
-  - fix configs for mint 12
+Install chrome
+Change terminal color (or complete profile)
