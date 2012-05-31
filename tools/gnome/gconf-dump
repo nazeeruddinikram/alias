@@ -9148,7 +9148,7 @@
       <key>/apps/metacity/general/num_workspaces</key>
       <schema_key>/schemas/apps/metacity/general/num_workspaces</schema_key>
       <value>
-        <int>2</int>
+        <int>4</int>
       </value>
     </entry>
     <entry>
