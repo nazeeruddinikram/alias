@@ -7529,7 +7529,7 @@
       <key>/apps/gnome-terminal/profiles/Default/default_show_menubar</key>
       <schema_key>/schemas/apps/gnome-terminal/profiles/Default/default_show_menubar</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
