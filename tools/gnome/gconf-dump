@@ -14116,6 +14116,38 @@
       </value>
     </entry>
     <entry>
+      <key>/desktop/gnome/peripherals/keyboard/general/defaultGroup</key>
+      <value>
+        <int>-1</int>
+      </value>
+    </entry>
+    <entry>
+      <key>/desktop/gnome/peripherals/keyboard/kbd/layouts</key>
+      <value>
+        <list type="string">
+            <value>
+              <string>br</string>
+            </value>
+            <value>
+              <string>us</string>
+            </value>
+        </list>
+      </value>
+    </entry>
+    <entry>
+      <key>/desktop/gnome/peripherals/keyboard/kbd/options</key>
+      <value>
+        <list type="string">
+            <value>
+              <string>caps	caps:super</string>
+            </value>
+            <value>
+              <string>grp	grp:sclk_toggle</string>
+            </value>
+        </list>
+      </value>
+    </entry>
+    <entry>
       <key>/desktop/gnome/peripherals/mouse/cursor_font</key>
       <schema_key>/schemas/desktop/gnome/peripherals/mouse/cursor_font</schema_key>
     </entry>
