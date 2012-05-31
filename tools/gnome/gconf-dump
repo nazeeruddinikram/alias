@@ -7722,6 +7722,12 @@
       </value>
     </entry>
     <entry>
+      <key>/apps/gnome_settings_daemon/keybindings/screensaver</key>
+      <value>
+        <string></string>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/gthumb/browser/fast_file_type</key>
       <schema_key>/schemas/apps/gthumb/browser/fast_file_type</schema_key>
       <value>
@@ -9248,7 +9254,7 @@
       <key>/apps/metacity/global_keybindings/panel_main_menu</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/panel_main_menu</schema_key>
       <value>
-        <string>&lt;Alt&gt;F1</string>
+        <string></string>
       </value>
     </entry>
     <entry>
@@ -9402,7 +9408,7 @@
       <key>/apps/metacity/global_keybindings/switch_to_workspace_1</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_1</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;1</string>
       </value>
     </entry>
     <entry>
@@ -9430,84 +9436,84 @@
       <key>/apps/metacity/global_keybindings/switch_to_workspace_2</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_2</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;2</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_3</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_3</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;3</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_4</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_4</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;4</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_5</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_5</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;5</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_6</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_6</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;6</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_7</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_7</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;7</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_8</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_8</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;8</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_9</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_9</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;9</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_down</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_down</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Down</string>
+        <string>&lt;Super&gt;j</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_left</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_left</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Super&gt;h</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_right</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_right</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Super&gt;l</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_up</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_up</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Up</string>
+        <string>&lt;Super&gt;k</string>
       </value>
     </entry>
     <entry>
@@ -9633,7 +9639,7 @@
       <key>/apps/metacity/window_keybindings/begin_move</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/begin_move</schema_key>
       <value>
-        <string>&lt;Alt&gt;F7</string>
+        <string></string>
       </value>
     </entry>
     <entry>
@@ -9647,7 +9653,7 @@
       <key>/apps/metacity/window_keybindings/close</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/close</schema_key>
       <value>
-        <string>&lt;Alt&gt;F4</string>
+        <string>&lt;Super&gt;q</string>
       </value>
     </entry>
     <entry>
@@ -9682,7 +9688,7 @@
       <key>/apps/metacity/window_keybindings/minimize</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/minimize</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;KP_0</string>
+        <string>&lt;Super&gt;z</string>
       </value>
     </entry>
     <entry>
@@ -9752,7 +9758,7 @@
       <key>/apps/metacity/window_keybindings/move_to_workspace_1</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_1</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;exclam</string>
       </value>
     </entry>
     <entry>
@@ -9780,35 +9786,35 @@
       <key>/apps/metacity/window_keybindings/move_to_workspace_2</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_2</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;at</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_3</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_3</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;numbersign</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_4</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_4</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;dollar</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_5</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_5</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;percent</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_6</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_6</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;dead_diaeresis</string>
       </value>
     </entry>
     <entry>
@@ -9836,28 +9842,28 @@
       <key>/apps/metacity/window_keybindings/move_to_workspace_down</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_down</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Down</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;Down</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_left</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_left</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;Left</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_right</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_right</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;Right</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_up</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_up</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Up</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;Up</string>
       </value>
     </entry>
     <entry>
@@ -9885,14 +9891,14 @@
       <key>/apps/metacity/window_keybindings/toggle_fullscreen</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/toggle_fullscreen</schema_key>
       <value>
-        <string>disabled</string>
+        <string>F11</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/toggle_maximized</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/toggle_maximized</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;KP_5</string>
+        <string>&lt;Super&gt;a</string>
       </value>
     </entry>
     <entry>
