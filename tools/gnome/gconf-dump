@@ -6948,6 +6948,19 @@
       </value>
     </entry>
     <entry>
+      <key>/apps/gconf-editor/recents</key>
+      <value>
+        <list type="string">
+            <value>
+              <string>/apps/metacity/keybinding_commands/command_1</string>
+            </value>
+            <value>
+              <string>/apps/metacity/global_keybindings/run_command_1</string>
+            </value>
+        </list>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/gecko-mediaplayer/preferences/debug-level</key>
       <schema_key>/schemas/apps/gecko-mediaplayer/preferences/debug-level</schema_key>
       <value>
@@ -9268,7 +9281,7 @@
       <key>/apps/metacity/global_keybindings/run_command_1</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/run_command</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;n</string>
       </value>
     </entry>
     <entry>
@@ -9534,7 +9547,7 @@
       <key>/apps/metacity/keybinding_commands/command_1</key>
       <schema_key>/schemas/apps/metacity/keybinding_commands/command</schema_key>
       <value>
-        <string></string>
+        <string>toggle -n qterminal -c &quot;gnome-terminal --full-screen -t qterminal&quot;</string>
       </value>
     </entry>
     <entry>
