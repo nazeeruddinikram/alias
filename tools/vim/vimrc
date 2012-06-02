@@ -80,3 +80,6 @@ let vimclojure#WantNailgun=1
 
 " Python options
 let g:pymode_folding = 0
+
+" NERD Tree options
+let NERDTreeIgnore = ['\.pyc$']
