@@ -6940,6 +6940,30 @@
       </value>
     </entry>
     <entry>
+      <key>/apps/eog/ui/image_collection</key>
+      <value>
+        <bool>false</bool>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/eog/ui/sidebar</key>
+      <value>
+        <bool>false</bool>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/eog/view/background-color</key>
+      <value>
+        <string>#000000</string>
+      </value>
+    </entry>
+    <entry>
+      <key>/apps/eog/view/use-background-color</key>
+      <value>
+        <bool>true</bool>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/gconf-editor/bookmarks</key>
       <schema_key>/schemas/apps/gconf-editor/bookmarks</schema_key>
       <value>
@@ -9315,7 +9339,7 @@
       <key>/apps/metacity/global_keybindings/panel_run_dialog</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/panel_run_dialog</schema_key>
       <value>
-        <string>&lt;Alt&gt;F2</string>
+        <string>&lt;Super&gt;space</string>
       </value>
     </entry>
     <entry>
@@ -10308,7 +10332,7 @@
     <entry>
       <key>/apps/nautilus/preferences/navigation_window_saved_maximized</key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
