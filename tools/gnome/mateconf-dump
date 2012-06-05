@@ -117,7 +117,7 @@
     <entry>
       <key>/apps/caja/desktop-metadata/computer/caja-icon-position-timestamp</key>
       <value>
-        <string>1338866238</string>
+        <string>1338868087</string>
       </value>
     </entry>
     <entry>
@@ -135,7 +135,7 @@
     <entry>
       <key>/apps/caja/desktop-metadata/directory/caja-icon-view-layout-timestamp</key>
       <value>
-        <string>1338866238</string>
+        <string>1338868087</string>
       </value>
     </entry>
     <entry>
@@ -153,7 +153,7 @@
     <entry>
       <key>/apps/caja/desktop-metadata/home/caja-icon-position-timestamp</key>
       <value>
-        <string>1338866238</string>
+        <string>1338868087</string>
       </value>
     </entry>
     <entry>
@@ -3573,7 +3573,7 @@
       <key>/apps/mate-terminal/profiles/Default/scrollbar_position</key>
       <schema_key>/schemas/apps/mate-terminal/profiles/Default/scrollbar_position</schema_key>
       <value>
-        <string>right</string>
+        <string>hidden</string>
       </value>
     </entry>
     <entry>
@@ -6878,7 +6878,7 @@
       <key>/apps/panel/toplevels/panel_0/auto_hide</key>
       <schema_key>/schemas/apps/panel/toplevels/auto_hide</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
