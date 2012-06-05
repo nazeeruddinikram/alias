@@ -23,55 +23,58 @@
               <string>vpswitch</string>
             </value>
             <value>
-              <string>snap</string>
-            </value>
-            <value>
-              <string>mousepoll</string>
-            </value>
-            <value>
-              <string>resize</string>
-            </value>
-            <value>
-              <string>place</string>
-            </value>
-            <value>
-              <string>move</string>
-            </value>
-            <value>
-              <string>wall</string>
+              <string>gnomecompat</string>
             </value>
             <value>
               <string>grid</string>
             </value>
             <value>
-              <string>regex</string>
+              <string>move</string>
+            </value>
+            <value>
+              <string>snap</string>
             </value>
             <value>
               <string>imgpng</string>
             </value>
             <value>
-              <string>session</string>
+              <string>place</string>
             </value>
             <value>
-              <string>gnomecompat</string>
+              <string>regex</string>
+            </value>
+            <value>
+              <string>resize</string>
+            </value>
+            <value>
+              <string>mousepoll</string>
+            </value>
+            <value>
+              <string>session</string>
             </value>
             <value>
               <string>animation</string>
             </value>
             <value>
-              <string>fade</string>
+              <string>wall</string>
             </value>
             <value>
               <string>workarounds</string>
-            </value>
-            <value>
-              <string>scale</string>
             </value>
             <value>
               <string>expo</string>
             </value>
             <value>
               <string>ezoom</string>
+            </value>
+            <value>
+              <string>staticswitcher</string>
+            </value>
+            <value>
+              <string>fade</string>
+            </value>
+            <value>
+              <string>scale</string>
             </value>
         </list>
       </value>
@@ -8798,7 +8801,7 @@
       <key>/apps/metacity/global_keybindings/run_command_terminal</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/run_command_terminal</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;T</string>
+        <string>&lt;Super&gt;t</string>
       </value>
     </entry>
     <entry>
@@ -12870,7 +12873,7 @@
       <key>/desktop/gnome/applications/terminal/exec</key>
       <schema_key>/schemas/desktop/gnome/applications/terminal/exec</schema_key>
       <value>
-        <string>gnome-terminal</string>
+        <string>mate-terminal</string>
       </value>
     </entry>
     <entry>
