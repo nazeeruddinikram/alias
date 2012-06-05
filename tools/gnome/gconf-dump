@@ -1,6 +1,82 @@
 <gconfentryfile>
   <entrylist base="/">
     <entry>
+      <key>/apps/compiz-1/general/screen0/options/active_plugins</key>
+      <value>
+        <list type="string">
+            <value>
+              <string>core</string>
+            </value>
+            <value>
+              <string>composite</string>
+            </value>
+            <value>
+              <string>opengl</string>
+            </value>
+            <value>
+              <string>compiztoolbox</string>
+            </value>
+            <value>
+              <string>decor</string>
+            </value>
+            <value>
+              <string>vpswitch</string>
+            </value>
+            <value>
+              <string>snap</string>
+            </value>
+            <value>
+              <string>mousepoll</string>
+            </value>
+            <value>
+              <string>resize</string>
+            </value>
+            <value>
+              <string>place</string>
+            </value>
+            <value>
+              <string>move</string>
+            </value>
+            <value>
+              <string>wall</string>
+            </value>
+            <value>
+              <string>grid</string>
+            </value>
+            <value>
+              <string>regex</string>
+            </value>
+            <value>
+              <string>imgpng</string>
+            </value>
+            <value>
+              <string>session</string>
+            </value>
+            <value>
+              <string>gnomecompat</string>
+            </value>
+            <value>
+              <string>animation</string>
+            </value>
+            <value>
+              <string>fade</string>
+            </value>
+            <value>
+              <string>workarounds</string>
+            </value>
+            <value>
+              <string>scale</string>
+            </value>
+            <value>
+              <string>expo</string>
+            </value>
+            <value>
+              <string>ezoom</string>
+            </value>
+        </list>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/compiz-1/general/screen0/options/hsize</key>
       <value>
         <int>2</int>
@@ -6659,6 +6735,23 @@
       </value>
     </entry>
     <entry>
+      <key>/apps/compizconfig-1/current_profile</key>
+      <value>
+        <schema>
+          <type>string</type>
+          <locale name="C">
+            <default_value>
+              <value>
+                <string>Default</string>
+              </value>
+            </default_value>
+            <short>Current profile</short>
+            <long>Current profile of gconf backend</long>
+          </locale>
+        </schema>
+      </value>
+    </entry>
+    <entry>
       <key>/apps/compizconfig-1/profiles/Default/general/screen0/options/active_plugins</key>
       <value>
         <list type="string">
@@ -8411,14 +8504,14 @@
       <key>/apps/metacity/general/auto_raise</key>
       <schema_key>/schemas/apps/metacity/general/auto_raise</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/general/auto_raise_delay</key>
       <schema_key>/schemas/apps/metacity/general/auto_raise_delay</schema_key>
       <value>
-        <int>500</int>
+        <int>1000</int>
       </value>
     </entry>
     <entry>
@@ -8544,7 +8637,7 @@
       <key>/apps/metacity/general/visual_bell_type</key>
       <schema_key>/schemas/apps/metacity/general/visual_bell_type</schema_key>
       <value>
-        <string>fullscreen</string>
+        <string>frame_flash</string>
       </value>
     </entry>
     <entry>
@@ -8705,7 +8798,7 @@
       <key>/apps/metacity/global_keybindings/run_command_terminal</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/run_command_terminal</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;t</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;T</string>
       </value>
     </entry>
     <entry>
@@ -8719,7 +8812,7 @@
       <key>/apps/metacity/global_keybindings/show_desktop</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/show_desktop</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Super&gt;d</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;d</string>
       </value>
     </entry>
     <entry>
@@ -8838,28 +8931,28 @@
       <key>/apps/metacity/global_keybindings/switch_to_workspace_down</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_down</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Down</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Down</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_left</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_left</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Left</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_right</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_right</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Right</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/global_keybindings/switch_to_workspace_up</key>
       <schema_key>/schemas/apps/metacity/global_keybindings/switch_to_workspace_up</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Up</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Up</string>
       </value>
     </entry>
     <entry>
@@ -9013,7 +9106,7 @@
       <key>/apps/metacity/window_keybindings/maximize</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/maximize</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Super&gt;Up</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;Up</string>
       </value>
     </entry>
     <entry>
@@ -9034,7 +9127,7 @@
       <key>/apps/metacity/window_keybindings/minimize</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/minimize</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;KP_0</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;KP_0</string>
       </value>
     </entry>
     <entry>
@@ -9048,56 +9141,56 @@
       <key>/apps/metacity/window_keybindings/move_to_corner_ne</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_corner_ne</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Prior</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_corner_nw</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_corner_nw</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Home</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_corner_se</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_corner_se</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Next</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_corner_sw</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_corner_sw</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_End</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_side_e</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_side_e</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Right</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_side_n</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_side_n</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Up</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_side_s</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_side_s</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Down</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_side_w</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_side_w</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Super&gt;KP_Left</string>
       </value>
     </entry>
     <entry>
@@ -9188,28 +9281,28 @@
       <key>/apps/metacity/window_keybindings/move_to_workspace_down</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_down</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Down</string>
+        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Down</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_left</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_left</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Left</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_right</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_right</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Right</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/move_to_workspace_up</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/move_to_workspace_up</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Up</string>
+        <string>&lt;Shift&gt;&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;Up</string>
       </value>
     </entry>
     <entry>
@@ -9244,7 +9337,7 @@
       <key>/apps/metacity/window_keybindings/toggle_maximized</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/toggle_maximized</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;KP_5</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;KP_5</string>
       </value>
     </entry>
     <entry>
@@ -9258,14 +9351,14 @@
       <key>/apps/metacity/window_keybindings/toggle_shaded</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/toggle_shaded</schema_key>
       <value>
-        <string>disabled</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Alt&gt;s</string>
       </value>
     </entry>
     <entry>
       <key>/apps/metacity/window_keybindings/unmaximize</key>
       <schema_key>/schemas/apps/metacity/window_keybindings/unmaximize</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Super&gt;Down</string>
+        <string>&lt;Control&gt;&lt;Primary&gt;&lt;Super&gt;Down</string>
       </value>
     </entry>
     <entry>
