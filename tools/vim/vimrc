@@ -25,6 +25,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'rodjek/vim-puppet'
 Bundle 'klen/python-mode'
+Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
 
 if isVundleInstalled == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -83,3 +84,7 @@ let g:pymode_folding = 0
 
 " NERD Tree options
 let NERDTreeIgnore = ['\.pyc$']
+
+" vim-latex options
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
