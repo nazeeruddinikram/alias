@@ -83,7 +83,7 @@ let vimclojure#WantNailgun=1
 let g:pymode_folding = 0
 
 " NERD Tree options
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '__init__.py']
 
 " vim-latex options
 let g:tex_flavor='latex'
