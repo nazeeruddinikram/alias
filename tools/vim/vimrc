@@ -49,7 +49,9 @@ noremap <silent> <F2> :NERDTreeToggle<Return>
 
 " FuzzyFinder mappings
 set <M-F>=F
+set <M-B>=B
 noremap <silent><M-S-f>f  :FufFile **/<CR>
+noremap <silent><M-S-b>b  :FufBuffer<CR>
 
 " Use spaces instead of tabs
 set expandtab
