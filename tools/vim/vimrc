@@ -27,6 +27,7 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'klen/python-mode'
 Bundle 'tpope/vim-rails'
 Bundle 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'
+Bundle 'altercation/vim-colors-solarized'
 
 if isVundleInstalled == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -49,9 +50,9 @@ noremap <silent> <F2> :NERDTreeToggle<Return>
 
 " FuzzyFinder mappings
 set <M-F>=F
-set <M-B>=B
-noremap <silent><M-S-f>f  :FufFile **/<CR>
-noremap <silent><M-S-b>b  :FufBuffer<CR>
+set <M-P>=P
+noremap <silent><M-S-f>  :FufFile **/<CR>
+noremap <silent><M-S-p>  :FufBuffer<CR>
 
 " Use spaces instead of tabs
 set expandtab
@@ -96,3 +97,8 @@ let g:Tex_ViewRule_pdf='evince'
 " match trailing whitespaces
 match Todo /\s\+$/
 autocmd BufWritePre *.* :%s/\s\+$//e
+
+"colors
+set t_Co=256
+set background=light
+colorscheme solarized

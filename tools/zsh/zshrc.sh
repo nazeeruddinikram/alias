@@ -1,3 +1,5 @@
+export TERM=xterm-256color
+
 # Start tmux
 if [ "$ZSH_USE_TMUX" = true ]; then
   if [ -z "$TMUX" ]; then
