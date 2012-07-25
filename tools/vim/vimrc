@@ -48,11 +48,21 @@ noremap <silent> <F2> :NERDTreeToggle<Return>
 "   exec "map! \e".c." <M-".c.">"
 " endfor
 
-" FuzzyFinder mappings
+" Fix metas
 set <M-F>=F
 set <M-P>=P
+set <M-M>=M
+set <M-C>=C
+set <M-V>=V
+
+" FuzzyFinder mappings
 noremap <silent><M-S-f>  :FufFile **/<CR>
 noremap <silent><M-S-p>  :FufBuffer<CR>
+
+" Rails mappings
+noremap <M-S-m> :Rmodel<Space>
+noremap <M-S-c> :Rcontroller<Space>
+noremap <M-S-v> :Rview<Space>
 
 " Use spaces instead of tabs
 set expandtab
