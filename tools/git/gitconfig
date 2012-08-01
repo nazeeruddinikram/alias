@@ -21,3 +21,5 @@
   tm = "!time-machine"
 [core]
   excludesfile = /home/juanibiapina/.gitignore
+[github]
+	user = juanibiapina
