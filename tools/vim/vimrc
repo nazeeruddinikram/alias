@@ -124,3 +124,6 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 set t_Co=256
 set background=light
 colorscheme solarized
+
+" Buffer mappings
+noremap <C-q> :bd<CR>
