@@ -19,6 +19,7 @@
   b = branch
   time-machine = "!time-machine"
   tm = "!time-machine"
+  rb = rebase
 [core]
   excludesfile = /home/juanibiapina/.gitignore
 [github]
